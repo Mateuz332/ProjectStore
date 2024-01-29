@@ -8,8 +8,9 @@ body {
 .hero {
     display: flex;
     align-items: flex-start;
-    height: 400px;
+    height: 30vh;
     width: auto;
+    border:2px solid black;
     
     background: url(img/1532805.jpg)no-repeat;
     background-position: center;
@@ -18,6 +19,7 @@ body {
     padding: 12px;
     gap: 32px;
 }
+
 .hero a {
     text-decoration: none;
 }
@@ -30,7 +32,7 @@ body {
 .hero span a {
     border-radius: 6px;
     background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.9);
+    border: 2px solid rgba(0, 0, 0, 0.9);
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(4px);
 
@@ -49,5 +51,52 @@ body {
 }
 
 .container {
+    background-color: #ebebeb;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .check_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    height: 80px;
+    margin: 16px;
+    padding: 8px;
+}
+
+.container .check_span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 8px;
+
+}
+
+.container .check_span input {
+    border-radius: 20px;
+    position: relative;
+}
+
+.container .check_span .receba {
+    background-color: white;
+    font-size: 34px;
+    height: 50px;
+    width: 460px;
+    box-shadow: 0px 1px 0px 1px;
     
 }
+
+.container .check_span .lupa_icon {
+    font-size: 34px;
+    color: rgb(82,82,82);
+
+    position: absolute;
+    right: 0; 
+    right: 420px;
+    cursor: pointer;
+}
+
